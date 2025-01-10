@@ -1,0 +1,26 @@
+<div class = "body-trangchu">
+<h1><%= t "hello" %></h1>
+<div class = "themsanphammoi">
+<%= link_to "New product", new_product_path if authenticated? %>
+</div>
+<%= link_to "Login", new_session_path unless authenticated? %>
+
+<div id="products">
+  <% @products.each do |product| %>
+    <div>
+      <%= link_to product.name, product %>
+      </a>
+    </div>
+  <% end %>
+</div>
+
+<h1>Sản phẩm</h1>
+<div class = "sanphamtrangchu">
+  <% @products.each do |product| %>
+      <div class="box-sp">
+        <%= link_to image_tag(product.featured_image, alt: product.name), product_path(product) if product.featured_image.attached? %>
+        <h3><%= product.name %></h3>
+        <p><%= product.description %></p>
+      </div>
+  <% end %> 
+</div>

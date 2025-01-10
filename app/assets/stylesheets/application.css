@@ -8,3 +8,170 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+ body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    background-color: #F6F6F6;
+ }
+  nav {
+    justify-content: flex-end;
+    display: flex;
+    font-size: 0.875em;
+    gap: 0.5rem;
+    width: 1024px;
+    margin: 0 auto;
+    padding: 1rem;
+    background:white;
+    box-shadow: 2px 2px 10px #0000001a;
+    border-radius: 10px;
+  }
+  
+  nav a {
+    display: inline-block;
+  }
+  
+  main {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  
+  .notice {
+    color: green;
+  }
+  
+  section.product {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    background:white;
+    box-shadow: 2px 2px 10px #0000001a;
+    padding:15px;
+    border-radius: 10px;
+  }
+  
+  section.product img {
+    border-radius: 8px;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  .title-themsanpham{
+    text-align: center;
+  }
+  .form-themsanpham {
+    align-content: center;
+    width: 70%;
+    height: auto;
+    line-height: 25px;
+    margin: 0 auto;
+    font-size: 16px;
+    background: white;
+    padding: 16px;
+    border-radius: 10px;
+    margin-top:20px;
+    box-shadow: 2px 2px 10px #0000001a;
+  }
+  .form-themsanpham a {
+    background: #5CC0DC;
+    border-radius: 10px;
+    padding: 10px 35px 10px 35px;
+    line-height: 50px;
+    width: 100%;
+  }
+  .form-themsanpham input{
+    width:99%;
+    height:22px;
+  }
+  .capnhatsanpham input{
+    width:100%;
+  }
+  .capnhatsanpham {
+    line-height: 50px;
+}
+.sanphamtrangchu {
+  display: flex;
+  gap:18px;
+  background: white;
+  padding:14px;
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+.sanphamtrangchu img {  
+  width: 210px;
+  height: 200px;
+}
+.box-sp {
+  padding: 10px;
+  background: white;
+  box-shadow: 0 1px 2px 0 rgb(60 64 67 / 10%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+  border-radius: 10px;
+}
+div#products {
+  background: white;
+  box-shadow: 2px 2px 10px #0000001a;
+  padding:14px;
+  border-radius: 10px;
+  margin-top:20px;
+  line-height: 25px;
+}
+.themsanphammoi {
+  background: white;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 10px #0000001a;
+  display: flex;
+  justify-content: center;
+  width: 150px !important;
+}
+.themsanphammoi a{
+
+}
+.themsanphammoi:hover {
+  background:#bfbfbf ;
+  color:white;
+}
+.box-sp img {
+  height: auto;
+  border-radius: 5px;
+}
+.body-trangchu {
+  background: white;
+  padding: 11px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+section.product-info {
+  width: 100%;
+  box-shadow: 2px 2px 10px #0000001a;
+  border-radius: 10px;
+  padding: 10px;
+}
+section.product img {
+    box-shadow: 2px 2px 10px #0000001a;
+}
+.login-trangchu {
+    width: 50%;
+    height: auto;
+    line-height: 30px;
+    font-size: 18px;
+    background: white;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #0000001a;
+    margin: 30px auto;
+}
+.login-trangchu input{
+  width:100%;
+  height:22px;
+}
+.login-trangchu input[type="submit"]{
+  width: 101.5%;
+  }
+  .login-trangchu h2{
+    text-align: center;
+    font-size: 50px;
+  } 
+  .login-trangchu a{
+    text-align: right;
+    font-size: 10px;
+  }

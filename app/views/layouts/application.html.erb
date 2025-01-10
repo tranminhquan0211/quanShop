@@ -23,6 +23,19 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="notice"><%= notice %></div>
+    <%= link_to "Home", root_path %>
+    <%= link_to "Sign in", new_session_path %>
+    <%= link_to "Sign up", new_registration_path %>
+    <nav>
+    <% if authenticated? %>
+      <% Current.user.email_address %>
+      <%= button_to "Log out", session_path, method: :delete if authenticated? %>
+    <% end %>  
+    </nav>
+
+    <main>
+      <%= yield %>
+    </main>
   </body>
 </html>
