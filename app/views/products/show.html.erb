@@ -10,11 +10,16 @@
     <% end %>
 
     <%= render "inventory", product: @product %>
-
+  <div class ="lienhe-product">
     <% if authenticated? %>
       <%= link_to "Edit", edit_product_path(@product) %>
+      <div class = "xoaproduct">
       <%= button_to "Delete", @product, method: :delete, data: { turbo_confirm: "Are you sure?" } %>
-      <%= link_to 'Back to Products', products_path %>
+      </div>
     <% end %>
+  </div>
+  <div class=  "back-product">
+  <%= link_to 'Back to Products', products_path %>
+  </div>
   </section>
 </section>
